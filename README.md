@@ -157,34 +157,6 @@ User uploads room image
 
 ## ML Models & Performance
 
-### ROI Forecasting — XGBoost Ensemble
-
-Trained on **32,210 Indian property transaction records** (Kaggle-derived).
-
-| Model | MAE (Lakh ₹) | RMSE | R² |
-|---|---|---|---|
-| XGBoost (primary) | 0.1508 | 0.3184 | **0.9991** |
-| Random Forest | 0.1212 | 0.3569 | 0.9989 |
-| Gradient Boosting | 0.2332 | 0.4170 | 0.9985 |
-| **Ensemble** | **0.1393** | **0.2951** | **0.9992** |
-
-Quantile models (q10/q50/q90) provide prediction intervals for uncertainty estimation.
-
-**City-level MAE:**
-
-| City | Records | MAE (Lakh ₹) |
-|---|---|---|
-| Mumbai | 1,471 | 0.099 |
-| Kolkata | 1,308 | 0.111 |
-| Chennai | 952 | 0.118 |
-| Bangalore | 1,207 | 0.153 |
-| Hyderabad | 511 | 0.153 |
-| Delhi NCR | 993 | 0.232 |
-
-**Features used:** `renovation_cost_lakh`, `size_sqft`, `city_tier`, `room_type`, `budget_tier`, `age_years`, `furnished`, `reno_intensity`, `scope`, `amenity_count`, `has_parking`, `city_psf_ratio`, `tier_appreciation`
-
----
-
 ### Material Price Forecasting — Facebook Prophet
 
 11 material categories × 6 cities = **66 individually trained Prophet models**
