@@ -59,7 +59,6 @@ The backend is built on **FastAPI v6.0** with a **LangGraph-orchestrated multi-a
 - Geometry-preserving before/after output
 
 **ROI & Price Forecasting**
-- XGBoost ensemble (R² = 0.9992) trained on 32,210 Indian property transaction records
 - Facebook Prophet time-series models for 11 material categories across 6 major cities
 - Mean MAPE of ~4.4% for material price forecasts
 
@@ -157,27 +156,163 @@ User uploads room image
 
 ## ML Models & Performance
 
-### Material Price Forecasting — Facebook Prophet
-
-11 material categories × 6 cities = **66 individually trained Prophet models**
-
-Materials covered: Asian Paints Premium, Kajaria Tiles, Granite, Bricks, Cement OPC 53, River Sand, Steel TMT Fe500, Teak Wood, Copper Wire, PVC/UPVC Windows, Modular Kitchen
-
-Average cross-validation MAPE: **~4.4%** (17 folds per model)
+ARKEN uses **6 custom-trained ML models**, all fine-tuned specifically for the Indian interior design and construction context. Training ran on an NVIDIA GeForce RTX 3060 Laptop GPU (6.4 GB GDDR6, CUDA 13.2, PyTorch 2.11). Room and style classifiers were trained on Google Colab to avoid RAM bottlenecks.
 
 ---
 
-### Visual Understanding — Fine-tuned CLIP
+### Model Summary
 
-| Metric | Value |
+| Model | Architecture | Key Metric | File | Size |
+|---|---|---|---|---|
+| YOLO Object Detection | YOLOv8n-detect (fine-tuned) | mAP@50 = 0.791 / mAP@50-95 = 0.695 | `yolo_indian_rooms.pt` | 5.4 MB |
+| CLIP Visual Encoder | ViT-B/32 (SigLIP fine-tuned) | val_loss = 0.1635 / i2t = 41.9% | `clip_finetuned.pt` | 336 MB |
+| Room Classifier | ResNet-18 (fine-tuned) | Accuracy = 88.89% / Macro F1 = 0.8887 | `room_classifier.pt` | 45 MB |
+| Style Classifier | ResNet-18 (fine-tuned) | Accuracy = 89.98% / Macro F1 = 0.8975 | `style_classifier.pt` | 45 MB |
+| Price XGBoost | XGBoost (n=800, global) | MAE = ₹25.04 / MAPE = 1.16% | `price_xgb.joblib` | 1.1 MB |
+| Price Prophet (72 models) | Prophet (CmdStan Newton) | Mean CV MAPE = 6.02% | `prophet_models/*.pkl` | Multiple |
+
+---
+
+### YOLOv8 Object Detection
+
+Fine-tuned YOLOv8n-detect on Indian room images using a pseudo-labelling approach — YOLOv8x (extra-large) was used as a teacher model to auto-annotate unlabelled Indian room images, augmenting the labelled dataset before fine-tuning the YOLOv8n student.
+
+**Training Configuration**
+
+| Parameter | Value |
 |---|---|
-| Base model | CLIP ViT-B/32 |
-| Loss | SigLIP (learnable temperature) |
-| Training samples | 2,648 |
-| Validation samples | 663 |
+| Base model | YOLOv8n-detect (COCO pretrained) |
+| Input size | 640 × 640 px |
+| Parameters | 2,687,488 |
+| Epochs | 80 |
+| Batch size | 16 |
+| Training time | 10.033 hours (RTX 3060 Laptop) |
+| Confidence threshold | 0.60 |
+
+**Validation Results**
+
+| Class | Precision | Recall | mAP@50 | mAP@50-95 |
+|---|---|---|---|---|
+| **ALL (overall)** | **0.885** | **0.710** | **0.791** | **0.695** |
+| chair | 0.926 | 0.879 | 0.962 | 0.874 |
+| sofa | 0.914 | 0.866 | 0.947 | 0.857 |
+| potted_plant | 0.882 | 0.878 | 0.950 | 0.833 |
+| bed | 0.946 | 0.943 | 0.971 | 0.864 |
+| dining_table | 0.861 | 0.811 | 0.901 | 0.802 |
+| toilet | 0.899 | 0.929 | 0.964 | 0.912 |
+| tv | 0.884 | 0.809 | 0.895 | 0.810 |
+| oven | 0.854 | 0.881 | 0.928 | 0.830 |
+| sink | 0.866 | 0.827 | 0.896 | 0.751 |
+| refrigerator | 0.892 | 0.809 | 0.912 | 0.822 |
+
+---
+
+### CLIP Visual Encoder (Fine-Tuned)
+
+Fine-tuned the last 4 visual transformer blocks of CLIP ViT-B/32 using SigLIP loss (more stable than standard contrastive CLIP loss on small datasets). Only the top layers were made trainable, preserving general visual features while specialising for Indian interior design style discrimination.
+
+**Training Configuration**
+
+| Parameter | Value |
+|---|---|
+| Base model | OpenAI CLIP ViT-B/32 |
+| Total parameters | 151,277,313 |
+| Trainable parameters | 29,006,848 (last 4 visual transformer blocks) |
+| Loss | SigLIP (sigmoid CLIP, learnable temperature) |
+| Optimizer | AdamW (weight_decay = 0.01) |
+| Learning rate | 1e-6 (backbone) / 1e-5 (log temperature) |
+| LR schedule | Cosine annealing + 3-epoch linear warmup |
+| Batch size | 16 |
 | Epochs | 15 |
-| Best val loss | **0.1635** |
-| Final image→text accuracy | **41.9%** |
+| Precision | AMP (Automatic Mixed Precision) |
+| Training samples | 2,648 / Validation: 663 |
+
+**Results:** Best val_loss = **0.1635** | i2t accuracy = **41.9%** | t2i accuracy = **41.9%**
+
+---
+
+### Room Classifier (ResNet-18, Fine-Tuned)
+
+Fine-tuned ResNet-18 with a custom multi-layer classification head (Dropout → Linear → BatchNorm → ReLU, repeated) to classify rooms into 4 types. Trained on a hybrid dataset of 6,787 images.
+
+**Training Configuration**
+
+| Parameter | Value |
+|---|---|
+| Backbone | ResNet-18 (ImageNet pretrained) |
+| Classes | 4 — bathroom, bedroom, kitchen, living_room |
+| Loss | CrossEntropyLoss (label_smoothing=0.1) + class weights |
+| Optimizer | AdamW (lr=3e-4, weight_decay=3e-4) |
+| Scheduler | CosineAnnealingWarmRestarts (T_0=10, T_mult=2) |
+| Batch size | 64 with WeightedRandomSampler |
+| Epochs | 45 |
+| Dataset | 6,787 train / 663 val / 828 test |
+
+**Results**
+
+| Class | F1 Score |
+|---|---|
+| bathroom | 0.85 |
+| bedroom | 0.89 |
+| kitchen | 0.92 |
+| living_room | 0.89 |
+| **Test Accuracy** | **88.89%** |
+| **Macro F1** | **0.8887** |
+
+---
+
+### Style Classifier (ResNet-18, Fine-Tuned)
+
+Same architecture and hyperparameters as the room classifier, output head changed to 5 style classes. Improved over zero-shot CLIP baseline of ~56% to **89.98%** — a +34 percentage point improvement.
+
+**Results**
+
+| Style | F1 Score | Training Images |
+|---|---|---|
+| boho | 0.89 | ~700 |
+| industrial | 0.90 | 764 |
+| minimalist | 0.89 | 796 |
+| modern | 0.91 | 2,392 |
+| scandinavian | 0.88 | 768 |
+| **Test Accuracy** | **89.98%** | — |
+| **Macro F1** | **0.8975** | — |
+
+---
+
+### Price Forecast Models (XGBoost + Prophet Ensemble)
+
+Trained on `india_material_prices_historical.csv` — 6,912 rows of monthly construction material prices across **12 materials** and **8 Indian cities** (January 2020 – December 2025). Train/test split: 5,385 training rows / 951 test rows.
+
+**Materials covered:** Cement OPC 53, Steel TMT Fe500, Teak Wood, Kajaria Tiles, Copper Wire, River Sand, Bricks, Granite, PVC/UPVC Windows, Asian Paints Premium, Modular Kitchen, Bathroom Sanitary Set
+
+**Cities covered:** Bangalore, Mumbai, Delhi NCR, Chennai, Pune, Hyderabad, Kolkata, Ahmedabad
+
+**XGBoost Global Model** (800 estimators, single model across all materials and cities)
+
+| Material | MAE (₹) | MAPE |
+|---|---|---|
+| **Overall** | **₹25.04** | **1.16%** |
+| Bricks per 1000 | ₹68.24 | 0.68% |
+| Bathroom sanitary set | ₹140.61 | 0.70% |
+| PVC/UPVC window per sqft | ₹6.70 | 0.73% |
+| Teak wood per cft | ₹23.14 | 0.76% |
+| Asian Paints premium per litre | ₹3.37 | 0.96% |
+| Cement OPC53 per 50kg bag | ₹5.10 | 1.14% |
+| Kajaria tiles per sqft | ₹1.21 | 1.38% |
+| Steel TMT Fe500 per kg | ₹1.80 | 2.98% |
+
+Training time: **1.3 seconds** | Model size: **1.1 MB**
+
+**Prophet Ensemble** — 72 individual models (12 materials × 8 cities), trained via CmdStan Newton optimisation (10,000 iterations/model), cross-validated with 17 walk-forward folds per series.
+
+Mean CV MAPE: **6.02%** | Total training time: **23.5 seconds**
+
+---
+
+### Depth Estimator
+
+**Depth-Anything-V2-Small** (HuggingFace Transformers) provides monocular depth estimation for room area calculation. Relative depth maps are converted to absolute measurements using detected objects of known real-world size (door: 2.10m, almirah: 1.80m, ceiling fan: 2.70m, bed: 0.60m) as calibration references. Falls back to Indian room size priors from housing transaction data when no calibration object is detected (bedroom median: 148 sqft, living room median: 218 sqft). Estimates with confidence below 0.50 are discarded in favour of Gemini Vision's area estimate.
+
 
 ---
 
