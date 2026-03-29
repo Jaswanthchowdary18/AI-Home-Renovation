@@ -1,0 +1,134 @@
+{
+  "training_date": "2026-03-25T00:51:30.841341+00:00",
+  "model": "CLIP ViT-B/32 (SigLIP loss, AMP, learnable temperature)",
+  "backend": "openai",
+  "train_samples": 2648,
+  "val_samples": 663,
+  "epochs_run": 15,
+  "best_val_loss": 0.163539,
+  "final_i2t_acc": 0.4193,
+  "final_t2i_acc": 0.4193,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.818761,
+      "val_loss": 2.007624,
+      "i2t_acc": 0.273,
+      "t2i_acc": 0.3077,
+      "log_temp": 2.659
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.826598,
+      "val_loss": 0.21498,
+      "i2t_acc": 0.3077,
+      "t2i_acc": 0.2247,
+      "log_temp": 2.6589
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.195906,
+      "val_loss": 0.185049,
+      "i2t_acc": 0.3695,
+      "t2i_acc": 0.359,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.180523,
+      "val_loss": 0.175828,
+      "i2t_acc": 0.3997,
+      "t2i_acc": 0.4027,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.172836,
+      "val_loss": 0.171806,
+      "i2t_acc": 0.4057,
+      "t2i_acc": 0.4118,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.168264,
+      "val_loss": 0.168867,
+      "i2t_acc": 0.4027,
+      "t2i_acc": 0.4178,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.164459,
+      "val_loss": 0.167024,
+      "i2t_acc": 0.4103,
+      "t2i_acc": 0.4268,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.160699,
+      "val_loss": 0.165586,
+      "i2t_acc": 0.4178,
+      "t2i_acc": 0.4178,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.159968,
+      "val_loss": 0.164808,
+      "i2t_acc": 0.4193,
+      "t2i_acc": 0.4208,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.157176,
+      "val_loss": 0.164191,
+      "i2t_acc": 0.4163,
+      "t2i_acc": 0.4193,
+      "log_temp": 2.6588
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.157161,
+      "val_loss": 0.163789,
+      "i2t_acc": 0.4223,
+      "t2i_acc": 0.4193,
+      "log_temp": 2.6589
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.156059,
+      "val_loss": 0.163765,
+      "i2t_acc": 0.4208,
+      "t2i_acc": 0.4193,
+      "log_temp": 2.6589
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.155242,
+      "val_loss": 0.163599,
+      "i2t_acc": 0.4193,
+      "t2i_acc": 0.4223,
+      "log_temp": 2.6589
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.155763,
+      "val_loss": 0.163545,
+      "i2t_acc": 0.4208,
+      "t2i_acc": 0.4193,
+      "log_temp": 2.6589
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.155187,
+      "val_loss": 0.163539,
+      "i2t_acc": 0.4193,
+      "t2i_acc": 0.4193,
+      "log_temp": 2.6589
+    }
+  ],
+  "weights_file": "ml/weights/clip_finetuned.pt"
+}

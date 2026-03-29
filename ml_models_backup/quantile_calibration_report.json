@@ -1,0 +1,17 @@
+{
+  "training_date": "2026-03-27T07:05:09.764316+00:00",
+  "target_coverage": 0.8,
+  "quantiles_trained": [
+    "q10",
+    "q50",
+    "q90"
+  ],
+  "coverage_q10_q90": 0.862,
+  "mean_interval_width_pct": 16.849,
+  "coverage_adequate": true,
+  "pinball_loss_per_quantile": {
+    "q10": 0.0877,
+    "q50": 0.1305,
+    "q90": 1.6104
+  }
+}

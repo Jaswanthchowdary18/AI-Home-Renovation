@@ -1,0 +1,138 @@
+# ARKEN — Docker Compose v3.1
+# Changes from v3.0:
+#   - Added dataset volume mount: ./backend/data/datasets → /app/data/datasets
+#   - Added ARKEN_DATASET_DIR env var for dataset loader
+#   - Added ARKEN_CV_ENABLED env var (set to "true" once CV deps installed)
+#   - Added dataset_storage named volume as fallback if local path not present
+
+services:
+  # ── PostgreSQL ──────────────────────────────────────────────────────────────
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: arken
+      POSTGRES_PASSWORD: arken
+      POSTGRES_DB: arken
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./infra/docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U arken"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Redis ───────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # ── Backend ─────────────────────────────────────────────────────────────────
+  backend:
+    build:
+      context: .
+      dockerfile: infra/docker/backend.Dockerfile
+    env_file: backend/.env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://arken:arken@postgres:5432/arken
+      REDIS_URL: redis://redis:6379/0
+      USE_S3: "false"
+      LANGGRAPH_TRACING_V2: "false"
+
+      # ── Dataset path (CV pipeline + RAG ingestion) ──────────────────────────
+      # Points to the mounted dataset directory inside the container.
+      # Change only if you rename the host-side folder.
+      ARKEN_DATASET_DIR: /app/data/datasets
+
+      # ── CV pipeline toggle ──────────────────────────────────────────────────
+      # ultralytics==8.3.2 is installed in requirements.txt and the Docker image.
+      # Set to "true" to enable YOLOv8 room segmentation + EfficientNet classifiers.
+      ARKEN_CV_ENABLED: "true"
+
+      # ── RAG FAISS: disable disk persist (in-memory is fast enough) ───────
+      # The FAISS index rebuilds in ~28s on first call then stays in memory.
+      # Docker volumes mount as root so disk writes fail with permission denied.
+      # Setting this to /tmp allows writes (tmpfs, world-writable).
+      RAG_PERSIST_DIR: /tmp/arken_rag_rw
+
+    volumes:
+      # ML model weights cache (YOLOv8, CLIP, EfficientNet — persisted across restarts)
+      - model_cache:/app/ml/weights
+
+      # Temp processing storage
+      - local_storage:/tmp/arken_local_storage
+
+      # ── HuggingFace model cache ──────────────────────────────────────────────
+      # CLIP ViT-B/32 + DepthAnything V2 + SentenceTransformers (~500MB total).
+      # HF_HOME=/app/hf_cache — /app is arken-owned so downloads succeed.
+      # The volume persists models across restarts (avoids 60-90s re-downloads).
+      - hf_cache:/app/hf_cache
+
+      # ── Datasets volume ─────────────────────────────────────────────────────
+      # Option A (recommended): bind-mount your local dataset folder (read-only)
+      # Must be :rw (read-write) — annotator writes .txt label files beside images
+      - ./backend/data/datasets:/app/data/datasets:rw
+
+      # Option B: named Docker volume (use if datasets are on a remote/NFS share)
+      # Comment out Option A and uncomment this line instead:
+      # - dataset_storage:/app/data/datasets
+
+    ports:
+      - "8000:8000"
+    shm_size: '8gb'      # Prevents PyTorch DataLoader /dev/shm exhaustion
+                         # (RuntimeError: unable to allocate shared memory)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+
+  # ── Frontend ─────────────────────────────────────────────────────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: infra/docker/frontend.Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pg_data:
+  redis_data:
+  model_cache:
+  local_storage:
+  hf_cache:    # HuggingFace models (CLIP, DepthAnything V2, SentenceTransformers)
+  # Uncomment if using Option B (named volume) for datasets:
+  # dataset_storage:

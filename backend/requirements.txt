@@ -1,0 +1,144 @@
+# ARKEN Backend — Python Dependencies v6.0
+# Python 3.11+
+#
+# Changelog:
+#   v5.2 — original baseline
+#   v5.3 — Added prophet==1.1.5 + cmdstanpy (PriceForecastAgent v5.0 ML ensemble)
+#   v5.4 — Added torch, torchvision, transformers, opencv-python-headless
+#           (VisionAnalyzerAgent v3.0: DepthEstimator, DamageDetector, StyleClassifier)
+#   v6.0 — PROMPT 1 UPGRADE:
+#           * ultralytics==8.3.2   (YOLOv8 — was commented out, NOW ACTIVE)
+#           * clip (openai/CLIP)   (was commented out, NOW ACTIVE)
+#           * ftfy==6.2.3          (CLIP text tokenizer dependency)
+#           * regex==2024.9.11     (CLIP text tokenizer dependency)
+#           * shap==0.45.0         (ROI explainability — Prompt 3)
+#           * schedule==1.2.1      (price scraper cron — Prompt 4)
+#           * beautifulsoup4==4.12.3 (price scraper — Prompt 4)
+#           * lxml==5.3.0          (BeautifulSoup lxml parser)
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+httpx==0.27.2
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy[asyncio]==2.0.35
+asyncpg==0.29.0
+alembic==1.13.3
+pgvector==0.3.2
+
+# ── Cache ─────────────────────────────────────────────────────────────────────
+redis[hiredis]==5.1.1
+
+# ── Auth ──────────────────────────────────────────────────────────────────────
+pyjwt==2.9.0
+bcrypt==4.2.0
+python-jose[cryptography]==3.3.0
+
+# ── Config ────────────────────────────────────────────────────────────────────
+pydantic==2.9.2
+pydantic-settings==2.5.2
+pydantic[email]
+
+# ── AWS ───────────────────────────────────────────────────────────────────────
+boto3==1.35.29
+botocore==1.35.29
+
+# ── ML / Prediction ───────────────────────────────────────────────────────────
+xgboost==2.1.1
+scikit-learn==1.5.2
+pandas==2.2.3
+joblib==1.4.2
+numpy==1.26.4
+Pillow==10.4.0
+
+# ── SHAP — XGBoost ROI Explainability (Prompt 3) ─────────────────────────────
+# Used by: backend/ml/roi_explainer.py
+# Explains per-prediction feature contributions for ROI forecast.
+# TreeExplainer is fast (~5ms per prediction on XGBoost models).
+shap==0.45.0
+
+# ── Time-Series Forecasting (PriceForecastAgent v5.0) ─────────────────────────
+# prophet 1.1.5 uses cmdstanpy as backend (no pystan needed)
+cmdstanpy==1.2.4
+prophet==1.1.5
+
+# ── AI API — REQUIRED ─────────────────────────────────────────────────────────
+google-genai>=1.0.0
+
+# ── Report Generation ─────────────────────────────────────────────────────────
+reportlab==4.2.5
+
+# ── LangGraph + LangChain (multi-agent pipeline) ──────────────────────────────
+langgraph>=0.2.28
+langchain-core>=0.3.15
+langchain>=0.3.0
+
+# ── Vector Store ──────────────────────────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── RAG Knowledge Retrieval ───────────────────────────────────────────────────
+faiss-cpu>=1.8.0
+sentence-transformers>=2.7.0
+rank-bm25>=0.2.2
+
+# ── Async / HTTP ──────────────────────────────────────────────────────────────
+anyio==4.6.0
+aiohttp==3.10.8
+
+# ── Observability ─────────────────────────────────────────────────────────────
+structlog==24.4.0
+
+# ── Dev / Test ────────────────────────────────────────────────────────────────
+pytest==8.3.3
+pytest-asyncio==0.24.0
+
+# ── CV + Vision Pipeline ──────────────────────────────────────────────────────
+#
+# PyTorch install — choose ONE of the following based on your hardware:
+#
+#   CPU only (no GPU):
+#     pip install torch==2.1.2 torchvision==0.16.2 \
+#       --index-url https://download.pytorch.org/whl/cpu
+#
+#   GPU (CUDA 12.1):
+#     pip install torch==2.1.2 torchvision==0.16.2 \
+#       --index-url https://download.pytorch.org/whl/cu121
+#
+# After installing torch, install the rest of this file normally:
+#   pip install -r requirements.txt
+#
+torch>=2.1.0
+torchvision>=0.16.0
+# HuggingFace Transformers — DepthAnything V2 + zero-shot CLIP fallback
+transformers>=4.40.0
+# OpenCV — heuristic fallback in damage_detector.py
+opencv-python-headless>=4.8.0
+
+# ── YOLOv8 — Indian Room Object Detection (NOW ACTIVE) ───────────────────────
+# Used by: backend/ml/cv_model_registry.py (YOLOv8Detector)
+#          backend/ml/damage_detector.py
+#          backend/ml/depth_estimator.py (calibration anchors)
+# Load order: yolo_indian_rooms.pt (fine-tuned) → yolov8n.pt (pretrained COCO)
+# Fine-tune by running: python ml/train_yolo_finetuned.py
+ultralytics==8.3.2
+
+# ── OpenAI CLIP — Fine-tuned Style/Room Embedding (NOW ACTIVE) ───────────────
+# Used by: backend/ml/cv_model_registry.py (CLIPEmbedder)
+#          backend/ml/style_classifier.py (Tier 2 fine-tuned CLIP)
+#          backend/ml/train_style_classifier.py (fine-tuning script)
+# Load order: clip_finetuned.pt (fine-tuned) → ViT-B/32 pretrained (auto-download)
+# Fine-tune by running: python ml/train_style_classifier.py --model clip
+#
+# NOTE: Install AFTER torch (CLIP's setup.py reads torch version)
+ftfy==6.2.3
+regex==2024.9.11
+clip @ git+https://github.com/openai/CLIP.git
+
+# ── Price Scraper Scheduler (Prompt 4) ────────────────────────────────────────
+# Used by: backend/services/price_scraper.py
+# Runs monthly IndiaMART price scraping to keep material prices real and live.
+schedule==1.2.1
+beautifulsoup4==4.12.3
+lxml==5.3.0

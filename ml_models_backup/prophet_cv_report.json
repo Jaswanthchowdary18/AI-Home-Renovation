@@ -1,0 +1,874 @@
+{
+  "asian_paints_premium_per_litre|Ahmedabad": {
+    "mean_mape": 4.43,
+    "std_mape": 11.53,
+    "worst_mape": 40.68,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Ahmedabad"
+  },
+  "asian_paints_premium_per_litre|Bangalore": {
+    "mean_mape": 6.72,
+    "std_mape": 18.16,
+    "worst_mape": 70.05,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Bangalore"
+  },
+  "asian_paints_premium_per_litre|Chennai": {
+    "mean_mape": 7.32,
+    "std_mape": 19.36,
+    "worst_mape": 71.55,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Chennai"
+  },
+  "asian_paints_premium_per_litre|Delhi NCR": {
+    "mean_mape": 5.53,
+    "std_mape": 14.12,
+    "worst_mape": 45.84,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Delhi NCR"
+  },
+  "asian_paints_premium_per_litre|Hyderabad": {
+    "mean_mape": 5.0,
+    "std_mape": 12.89,
+    "worst_mape": 47.2,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Hyderabad"
+  },
+  "asian_paints_premium_per_litre|Kolkata": {
+    "mean_mape": 6.07,
+    "std_mape": 16.68,
+    "worst_mape": 63.93,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Kolkata"
+  },
+  "asian_paints_premium_per_litre|Mumbai": {
+    "mean_mape": 7.13,
+    "std_mape": 19.05,
+    "worst_mape": 72.31,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Mumbai"
+  },
+  "asian_paints_premium_per_litre|Pune": {
+    "mean_mape": 7.32,
+    "std_mape": 19.36,
+    "worst_mape": 71.55,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "asian_paints_premium_per_litre",
+    "city": "Pune"
+  },
+  "bathroom_sanitary_set|Ahmedabad": {
+    "mean_mape": 6.0,
+    "std_mape": 16.15,
+    "worst_mape": 55.66,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Ahmedabad"
+  },
+  "bathroom_sanitary_set|Bangalore": {
+    "mean_mape": 6.47,
+    "std_mape": 17.27,
+    "worst_mape": 54.38,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Bangalore"
+  },
+  "bathroom_sanitary_set|Chennai": {
+    "mean_mape": 6.22,
+    "std_mape": 16.54,
+    "worst_mape": 52.73,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Chennai"
+  },
+  "bathroom_sanitary_set|Delhi NCR": {
+    "mean_mape": 4.97,
+    "std_mape": 13.83,
+    "worst_mape": 54.14,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Delhi NCR"
+  },
+  "bathroom_sanitary_set|Hyderabad": {
+    "mean_mape": 5.75,
+    "std_mape": 15.35,
+    "worst_mape": 50.37,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Hyderabad"
+  },
+  "bathroom_sanitary_set|Kolkata": {
+    "mean_mape": 5.92,
+    "std_mape": 15.77,
+    "worst_mape": 54.97,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Kolkata"
+  },
+  "bathroom_sanitary_set|Mumbai": {
+    "mean_mape": 7.16,
+    "std_mape": 19.17,
+    "worst_mape": 64.48,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Mumbai"
+  },
+  "bathroom_sanitary_set|Pune": {
+    "mean_mape": 6.22,
+    "std_mape": 16.54,
+    "worst_mape": 52.73,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "bathroom_sanitary_set",
+    "city": "Pune"
+  },
+  "bricks_per_1000|Ahmedabad": {
+    "mean_mape": 4.69,
+    "std_mape": 15.1,
+    "worst_mape": 64.65,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Ahmedabad"
+  },
+  "bricks_per_1000|Bangalore": {
+    "mean_mape": 4.85,
+    "std_mape": 14.95,
+    "worst_mape": 63.7,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Bangalore"
+  },
+  "bricks_per_1000|Chennai": {
+    "mean_mape": 4.77,
+    "std_mape": 15.09,
+    "worst_mape": 64.52,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Chennai"
+  },
+  "bricks_per_1000|Delhi NCR": {
+    "mean_mape": 4.93,
+    "std_mape": 15.23,
+    "worst_mape": 64.77,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Delhi NCR"
+  },
+  "bricks_per_1000|Hyderabad": {
+    "mean_mape": 4.78,
+    "std_mape": 15.21,
+    "worst_mape": 64.94,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Hyderabad"
+  },
+  "bricks_per_1000|Kolkata": {
+    "mean_mape": 5.12,
+    "std_mape": 16.26,
+    "worst_mape": 69.43,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Kolkata"
+  },
+  "bricks_per_1000|Mumbai": {
+    "mean_mape": 4.43,
+    "std_mape": 14.01,
+    "worst_mape": 59.85,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Mumbai"
+  },
+  "bricks_per_1000|Pune": {
+    "mean_mape": 4.77,
+    "std_mape": 15.09,
+    "worst_mape": 64.52,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "bricks_per_1000",
+    "city": "Pune"
+  },
+  "cement_opc53_per_bag_50kg|Ahmedabad": {
+    "mean_mape": 4.22,
+    "std_mape": 12.42,
+    "worst_mape": 52.33,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Ahmedabad"
+  },
+  "cement_opc53_per_bag_50kg|Bangalore": {
+    "mean_mape": 3.38,
+    "std_mape": 7.8,
+    "worst_mape": 28.08,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Bangalore"
+  },
+  "cement_opc53_per_bag_50kg|Chennai": {
+    "mean_mape": 3.38,
+    "std_mape": 8.81,
+    "worst_mape": 35.79,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Chennai"
+  },
+  "cement_opc53_per_bag_50kg|Delhi NCR": {
+    "mean_mape": 3.83,
+    "std_mape": 9.72,
+    "worst_mape": 38.67,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Delhi NCR"
+  },
+  "cement_opc53_per_bag_50kg|Hyderabad": {
+    "mean_mape": 4.23,
+    "std_mape": 11.02,
+    "worst_mape": 44.5,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Hyderabad"
+  },
+  "cement_opc53_per_bag_50kg|Kolkata": {
+    "mean_mape": 4.79,
+    "std_mape": 12.96,
+    "worst_mape": 53.98,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Kolkata"
+  },
+  "cement_opc53_per_bag_50kg|Mumbai": {
+    "mean_mape": 2.25,
+    "std_mape": 5.19,
+    "worst_mape": 20.21,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Mumbai"
+  },
+  "cement_opc53_per_bag_50kg|Pune": {
+    "mean_mape": 3.38,
+    "std_mape": 8.81,
+    "worst_mape": 35.79,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "cement_opc53_per_bag_50kg",
+    "city": "Pune"
+  },
+  "copper_wire_per_kg|Ahmedabad": {
+    "mean_mape": 10.05,
+    "std_mape": 11.11,
+    "worst_mape": 46.88,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Ahmedabad"
+  },
+  "copper_wire_per_kg|Bangalore": {
+    "mean_mape": 10.64,
+    "std_mape": 13.06,
+    "worst_mape": 56.42,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Bangalore"
+  },
+  "copper_wire_per_kg|Chennai": {
+    "mean_mape": 11.0,
+    "std_mape": 14.34,
+    "worst_mape": 62.56,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Chennai"
+  },
+  "copper_wire_per_kg|Delhi NCR": {
+    "mean_mape": 12.31,
+    "std_mape": 18.06,
+    "worst_mape": 77.68,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Delhi NCR"
+  },
+  "copper_wire_per_kg|Hyderabad": {
+    "mean_mape": 13.02,
+    "std_mape": 21.92,
+    "worst_mape": 97.02,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Hyderabad"
+  },
+  "copper_wire_per_kg|Kolkata": {
+    "mean_mape": 10.21,
+    "std_mape": 11.63,
+    "worst_mape": 49.33,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Kolkata"
+  },
+  "copper_wire_per_kg|Mumbai": {
+    "mean_mape": 13.02,
+    "std_mape": 21.92,
+    "worst_mape": 97.02,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Mumbai"
+  },
+  "copper_wire_per_kg|Pune": {
+    "mean_mape": 11.0,
+    "std_mape": 14.34,
+    "worst_mape": 62.56,
+    "best_mape": 1.25,
+    "n_folds": 17,
+    "material": "copper_wire_per_kg",
+    "city": "Pune"
+  },
+  "granite_per_sqft|Ahmedabad": {
+    "mean_mape": 3.21,
+    "std_mape": 8.44,
+    "worst_mape": 34.02,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Ahmedabad"
+  },
+  "granite_per_sqft|Bangalore": {
+    "mean_mape": 6.73,
+    "std_mape": 17.38,
+    "worst_mape": 56.3,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Bangalore"
+  },
+  "granite_per_sqft|Chennai": {
+    "mean_mape": 5.59,
+    "std_mape": 13.83,
+    "worst_mape": 46.13,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Chennai"
+  },
+  "granite_per_sqft|Delhi NCR": {
+    "mean_mape": 6.94,
+    "std_mape": 18.15,
+    "worst_mape": 59.87,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Delhi NCR"
+  },
+  "granite_per_sqft|Hyderabad": {
+    "mean_mape": 5.07,
+    "std_mape": 13.01,
+    "worst_mape": 46.71,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Hyderabad"
+  },
+  "granite_per_sqft|Kolkata": {
+    "mean_mape": 3.95,
+    "std_mape": 9.86,
+    "worst_mape": 38.65,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Kolkata"
+  },
+  "granite_per_sqft|Mumbai": {
+    "mean_mape": 6.02,
+    "std_mape": 15.85,
+    "worst_mape": 59.64,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Mumbai"
+  },
+  "granite_per_sqft|Pune": {
+    "mean_mape": 5.59,
+    "std_mape": 13.83,
+    "worst_mape": 46.13,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "granite_per_sqft",
+    "city": "Pune"
+  },
+  "kajaria_tiles_per_sqft|Ahmedabad": {
+    "mean_mape": 6.0,
+    "std_mape": 15.34,
+    "worst_mape": 50.25,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Ahmedabad"
+  },
+  "kajaria_tiles_per_sqft|Bangalore": {
+    "mean_mape": 4.48,
+    "std_mape": 12.09,
+    "worst_mape": 47.74,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Bangalore"
+  },
+  "kajaria_tiles_per_sqft|Chennai": {
+    "mean_mape": 7.9,
+    "std_mape": 21.6,
+    "worst_mape": 84.41,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Chennai"
+  },
+  "kajaria_tiles_per_sqft|Delhi NCR": {
+    "mean_mape": 5.6,
+    "std_mape": 14.22,
+    "worst_mape": 45.5,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Delhi NCR"
+  },
+  "kajaria_tiles_per_sqft|Hyderabad": {
+    "mean_mape": 5.14,
+    "std_mape": 13.16,
+    "worst_mape": 41.23,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Hyderabad"
+  },
+  "kajaria_tiles_per_sqft|Kolkata": {
+    "mean_mape": 5.4,
+    "std_mape": 14.22,
+    "worst_mape": 50.08,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Kolkata"
+  },
+  "kajaria_tiles_per_sqft|Mumbai": {
+    "mean_mape": 5.91,
+    "std_mape": 15.66,
+    "worst_mape": 56.12,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Mumbai"
+  },
+  "kajaria_tiles_per_sqft|Pune": {
+    "mean_mape": 7.9,
+    "std_mape": 21.6,
+    "worst_mape": 84.41,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "kajaria_tiles_per_sqft",
+    "city": "Pune"
+  },
+  "modular_kitchen_per_sqft|Ahmedabad": {
+    "mean_mape": 4.03,
+    "std_mape": 12.55,
+    "worst_mape": 53.38,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Ahmedabad"
+  },
+  "modular_kitchen_per_sqft|Bangalore": {
+    "mean_mape": 4.11,
+    "std_mape": 10.89,
+    "worst_mape": 43.25,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Bangalore"
+  },
+  "modular_kitchen_per_sqft|Chennai": {
+    "mean_mape": 6.69,
+    "std_mape": 19.53,
+    "worst_mape": 80.62,
+    "best_mape": 0.04,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Chennai"
+  },
+  "modular_kitchen_per_sqft|Delhi NCR": {
+    "mean_mape": 3.87,
+    "std_mape": 9.85,
+    "worst_mape": 38.63,
+    "best_mape": 0.05,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Delhi NCR"
+  },
+  "modular_kitchen_per_sqft|Hyderabad": {
+    "mean_mape": 4.56,
+    "std_mape": 11.96,
+    "worst_mape": 46.8,
+    "best_mape": 0.05,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Hyderabad"
+  },
+  "modular_kitchen_per_sqft|Kolkata": {
+    "mean_mape": 4.49,
+    "std_mape": 11.83,
+    "worst_mape": 45.2,
+    "best_mape": 0.05,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Kolkata"
+  },
+  "modular_kitchen_per_sqft|Mumbai": {
+    "mean_mape": 4.73,
+    "std_mape": 12.61,
+    "worst_mape": 50.66,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Mumbai"
+  },
+  "modular_kitchen_per_sqft|Pune": {
+    "mean_mape": 6.69,
+    "std_mape": 19.53,
+    "worst_mape": 80.62,
+    "best_mape": 0.04,
+    "n_folds": 17,
+    "material": "modular_kitchen_per_sqft",
+    "city": "Pune"
+  },
+  "pvc_upvc_window_per_sqft|Ahmedabad": {
+    "mean_mape": 6.32,
+    "std_mape": 16.7,
+    "worst_mape": 55.1,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Ahmedabad"
+  },
+  "pvc_upvc_window_per_sqft|Bangalore": {
+    "mean_mape": 6.19,
+    "std_mape": 16.45,
+    "worst_mape": 57.2,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Bangalore"
+  },
+  "pvc_upvc_window_per_sqft|Chennai": {
+    "mean_mape": 4.07,
+    "std_mape": 11.58,
+    "worst_mape": 47.67,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Chennai"
+  },
+  "pvc_upvc_window_per_sqft|Delhi NCR": {
+    "mean_mape": 5.47,
+    "std_mape": 14.33,
+    "worst_mape": 46.73,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Delhi NCR"
+  },
+  "pvc_upvc_window_per_sqft|Hyderabad": {
+    "mean_mape": 4.88,
+    "std_mape": 12.61,
+    "worst_mape": 47.08,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Hyderabad"
+  },
+  "pvc_upvc_window_per_sqft|Kolkata": {
+    "mean_mape": 6.7,
+    "std_mape": 17.84,
+    "worst_mape": 60.19,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Kolkata"
+  },
+  "pvc_upvc_window_per_sqft|Mumbai": {
+    "mean_mape": 4.49,
+    "std_mape": 11.53,
+    "worst_mape": 39.35,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Mumbai"
+  },
+  "pvc_upvc_window_per_sqft|Pune": {
+    "mean_mape": 4.07,
+    "std_mape": 11.58,
+    "worst_mape": 47.67,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "pvc_upvc_window_per_sqft",
+    "city": "Pune"
+  },
+  "sand_river_per_brass|Ahmedabad": {
+    "mean_mape": 4.41,
+    "std_mape": 11.4,
+    "worst_mape": 46.68,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Ahmedabad"
+  },
+  "sand_river_per_brass|Bangalore": {
+    "mean_mape": 8.22,
+    "std_mape": 21.37,
+    "worst_mape": 69.01,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Bangalore"
+  },
+  "sand_river_per_brass|Chennai": {
+    "mean_mape": 3.81,
+    "std_mape": 9.82,
+    "worst_mape": 40.85,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Chennai"
+  },
+  "sand_river_per_brass|Delhi NCR": {
+    "mean_mape": 4.61,
+    "std_mape": 13.2,
+    "worst_mape": 55.83,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Delhi NCR"
+  },
+  "sand_river_per_brass|Hyderabad": {
+    "mean_mape": 4.91,
+    "std_mape": 15.09,
+    "worst_mape": 64.39,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Hyderabad"
+  },
+  "sand_river_per_brass|Kolkata": {
+    "mean_mape": 4.73,
+    "std_mape": 12.43,
+    "worst_mape": 50.38,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Kolkata"
+  },
+  "sand_river_per_brass|Mumbai": {
+    "mean_mape": 4.19,
+    "std_mape": 11.11,
+    "worst_mape": 46.32,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Mumbai"
+  },
+  "sand_river_per_brass|Pune": {
+    "mean_mape": 3.81,
+    "std_mape": 9.82,
+    "worst_mape": 40.85,
+    "best_mape": 0.06,
+    "n_folds": 17,
+    "material": "sand_river_per_brass",
+    "city": "Pune"
+  },
+  "steel_tmt_fe500_per_kg|Ahmedabad": {
+    "mean_mape": 7.82,
+    "std_mape": 5.17,
+    "worst_mape": 17.13,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Ahmedabad"
+  },
+  "steel_tmt_fe500_per_kg|Bangalore": {
+    "mean_mape": 7.48,
+    "std_mape": 5.06,
+    "worst_mape": 17.13,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Bangalore"
+  },
+  "steel_tmt_fe500_per_kg|Chennai": {
+    "mean_mape": 7.9,
+    "std_mape": 5.24,
+    "worst_mape": 17.13,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Chennai"
+  },
+  "steel_tmt_fe500_per_kg|Delhi NCR": {
+    "mean_mape": 7.76,
+    "std_mape": 5.13,
+    "worst_mape": 17.14,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Delhi NCR"
+  },
+  "steel_tmt_fe500_per_kg|Hyderabad": {
+    "mean_mape": 7.99,
+    "std_mape": 5.35,
+    "worst_mape": 17.13,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Hyderabad"
+  },
+  "steel_tmt_fe500_per_kg|Kolkata": {
+    "mean_mape": 7.64,
+    "std_mape": 5.07,
+    "worst_mape": 17.13,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Kolkata"
+  },
+  "steel_tmt_fe500_per_kg|Mumbai": {
+    "mean_mape": 7.99,
+    "std_mape": 5.35,
+    "worst_mape": 17.13,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Mumbai"
+  },
+  "steel_tmt_fe500_per_kg|Pune": {
+    "mean_mape": 7.9,
+    "std_mape": 5.24,
+    "worst_mape": 17.13,
+    "best_mape": 0.87,
+    "n_folds": 17,
+    "material": "steel_tmt_fe500_per_kg",
+    "city": "Pune"
+  },
+  "teak_wood_per_cft|Ahmedabad": {
+    "mean_mape": 7.2,
+    "std_mape": 19.04,
+    "worst_mape": 62.28,
+    "best_mape": 0.0,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Ahmedabad"
+  },
+  "teak_wood_per_cft|Bangalore": {
+    "mean_mape": 12.96,
+    "std_mape": 39.36,
+    "worst_mape": 162.2,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Bangalore"
+  },
+  "teak_wood_per_cft|Chennai": {
+    "mean_mape": 3.81,
+    "std_mape": 9.95,
+    "worst_mape": 36.94,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Chennai"
+  },
+  "teak_wood_per_cft|Delhi NCR": {
+    "mean_mape": 5.7,
+    "std_mape": 15.02,
+    "worst_mape": 53.79,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Delhi NCR"
+  },
+  "teak_wood_per_cft|Hyderabad": {
+    "mean_mape": 4.68,
+    "std_mape": 12.44,
+    "worst_mape": 47.65,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Hyderabad"
+  },
+  "teak_wood_per_cft|Kolkata": {
+    "mean_mape": 4.41,
+    "std_mape": 11.96,
+    "worst_mape": 47.6,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Kolkata"
+  },
+  "teak_wood_per_cft|Mumbai": {
+    "mean_mape": 3.98,
+    "std_mape": 10.28,
+    "worst_mape": 39.48,
+    "best_mape": 0.01,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Mumbai"
+  },
+  "teak_wood_per_cft|Pune": {
+    "mean_mape": 3.81,
+    "std_mape": 9.95,
+    "worst_mape": 36.94,
+    "best_mape": 0.02,
+    "n_folds": 17,
+    "material": "teak_wood_per_cft",
+    "city": "Pune"
+  },
+  "__summary__": {
+    "overall_mean_mape": 6.02,
+    "overall_median_mape": 5.5,
+    "materials_validated": 12,
+    "cities_validated": 8,
+    "total_material_city_pairs": 96,
+    "validation_date": "2026-03-27T14:20:22.885422"
+  }
+}

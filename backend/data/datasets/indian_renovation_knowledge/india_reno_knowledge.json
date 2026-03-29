@@ -1,0 +1,326 @@
+[
+  {
+    "id": "k001", "category": "electrical",
+    "title": "IS:732 — Indian House Wiring Standard",
+    "content": "Indian house wiring is governed by BIS standard IS:732 (Code of Practice for Electrical Wiring Installations). All conductors must carry the ISI mark. Indian homes operate at 230V single-phase, 50Hz — fundamentally different from 110V/60Hz North American systems. Minimum conductor size: 1.5 sq mm for lighting circuits, 2.5 sq mm for power circuits (copper, PVC insulated). All wiring must run in concealed PVC conduit (IS:9537) in new construction. Surface wiring permitted in old buildings during retrofits with prior approval. BIS certification mandatory for all switchgear, cables, and accessories in licensed electrical installations.",
+    "source": "BIS IS:732", "tags": ["electrical","wiring","BIS","IS:732","230V","ISI mark"]
+  },
+  {
+    "id": "k002", "category": "electrical",
+    "title": "MCB and ELCB Ratings for Indian Homes",
+    "content": "Indian residential MCBs follow IS:8828. Standard ratings: 6A for lighting circuits, 16A for power/AC points, 32A for geysers and high-load appliances. Every Indian home must have an ELCB at the distribution board — mandatory per NBC 2016. Recommended brands: Legrand, Schneider Electric, Havells, ABB. A 2BHK typically needs a 4-way DB; 3BHK needs 8-way minimum. MCB cost: ₹180–350 per 6A–16A unit. Full DB (4-way with ELCB): ₹2,800–5,500 installed. Upgrade old rewirable fuse boards to MCB DB — critical safety improvement in homes older than 15 years.",
+    "source": "BIS IS:8828, NBC 2016", "tags": ["electrical","MCB","ELCB","distribution board","Havells","Legrand"]
+  },
+  {
+    "id": "k003", "category": "electrical",
+    "title": "Earthing Requirements per IS:3043",
+    "content": "IS:3043 governs earthing of electrical installations in India. Every residential building must have earthing connected to all metal parts of electrical equipment. Earth conductors must be green/yellow insulated. Pipe earthing (GI pipe 40mm dia, 2.5m long in earth pit with charcoal and salt) is standard for residential buildings. Resistance must be below 1 ohm. Verify with a socket tester (₹400–800). Cost for proper earth pit installation: ₹2,500–5,500 including labour. In sandy soil (Rajasthan, Gujarat) add bentonite clay for lower resistance. Common failure in Indian apartments: earth wire disconnected — check every socket.",
+    "source": "BIS IS:3043", "tags": ["electrical","earthing","IS:3043","earth pit","safety"]
+  },
+  {
+    "id": "k004", "category": "electrical",
+    "title": "3-Phase vs Single-Phase Supply in Indian Homes",
+    "content": "Most Indian residential apartments receive single-phase 230V supply. 3-phase (415V, 50Hz) is available in bungalows where connected load exceeds 7.5 kW. If adding multiple ACs, geysers, or an EV charger, calculate connected load. Single-phase maximum: 5–7 kW (20–32A service fuse). Typical 2BHK connected load: 4.5–6 kW. Adding a 1.5T AC adds 1.8 kW. If total exceeds DISCOM sanctioned load, apply for load enhancement (30–60 days). Three-phase supply cost at meter: ₹8,000–20,000 one-time DISCOM charge.",
+    "source": "CEA Regulations 2010", "tags": ["electrical","3-phase","load calculation","DISCOM"]
+  },
+  {
+    "id": "k005", "category": "electrical",
+    "title": "ISI Mark Requirements for Electrical Products",
+    "content": "ISI certification (Bureau of Indian Standards) is mandatory for electrical products under the Compulsory Registration Order. Products requiring ISI mark: cables (IS:694, IS:9968), switchgear (IS:3854, IS:8828), MCBs, wiring accessories, electric fans. Using non-ISI products voids insurance and creates contractor liability. Verify using the BIS Care app (free, Government of India) — enter the 7-digit licence number on the product. Common fake ISI marks exist — buy from authorised dealers (Havells, Legrand). Never compromise on ISI certification for any electrical component during renovation.",
+    "source": "BIS Compulsory Registration Order", "tags": ["electrical","ISI mark","BIS","certification","safety"]
+  },
+  {
+    "id": "k006", "category": "electrical",
+    "title": "Modular Switchgear Brands and Costs in India",
+    "content": "Indian modular switches follow IS:3854. Premium brands: Legrand (Arteor, Myrius), Schneider (AvatarOn, Lisse), Havells (Crabtree, Endura). Mid-range: Anchor Roma, Goldmedal, GM Electrical. Switch pricing: Economy (Anchor) ₹35–60/point; Mid (Havells Crabtree) ₹80–150/point; Premium (Legrand Arteor) ₹200–450/point. Typical 2BHK has 40–60 switch/socket points. Smart switches (Wi-Fi, Alexa compatible): Legrand Netatmo, Schneider Wiser, Wipro Smart ₹350–900/point — growing preference among Bangalore and Mumbai tech buyers. Installation: ₹80–150 per point labour only.",
+    "source": "BIS IS:3854, ARKEN market survey Q1 2026", "tags": ["electrical","switches","Legrand","Schneider","Havells","smart home"]
+  },
+  {
+    "id": "k007", "category": "electrical",
+    "title": "LED Lighting Standards for Indian Homes",
+    "content": "LED lighting specification follows IS:16102 and IS:3646. Recommended lux levels: living room 200–300 lux, bedroom 100–150 lux ambient, kitchen task area 500 lux, bathroom 300 lux. Colour temperature: 2700K warm white for bedrooms/living rooms; 4000K neutral for kitchens, studies, bathrooms. CRI minimum 80 for living areas, 90+ for vanity areas. LED brands: Havells (Glamo), Philips (WiZ), Wipro (Garnet), Syska, Crompton. Recessed LED panel (12W, 6-inch): ₹280–650 supply. LED strip for cove (per metre): ₹180–450. Avoid non-ISI LED strips — fire hazard from overheating drivers.",
+    "source": "BIS IS:16102, NBC Part 8, IS:3646", "tags": ["electrical","LED","lighting","lux","cove lighting","Havells"]
+  },
+  {
+    "id": "k008", "category": "electrical",
+    "title": "Electrical Rewiring Costs in India 2026",
+    "content": "Complete rewiring costs for Indian apartments (Q1 2026): 1BHK full rewiring ₹12,000–22,000; 2BHK ₹22,000–40,000; 3BHK ₹35,000–65,000. Per-point costs: switch/socket point ₹800–1,800 including wire, conduit, fitting. AC point with 2.5 sq mm copper: ₹1,200–2,200. Geyser point 6 sq mm: ₹1,500–2,800. MCB DB replacement (8-way with ELCB): ₹3,500–7,000. ISI-certified cables: Finolex (IS:694), Polycab (IS:694), RR Kabel. City multiplier for labour: Mumbai 1.4x, Delhi NCR 1.3x, Bangalore 1.2x vs Hyderabad base.",
+    "source": "ARKEN contractor survey Q1 2026", "tags": ["electrical","cost","rewiring","INR","2BHK","Finolex","Polycab"]
+  },
+  {
+    "id": "k009", "category": "electrical",
+    "title": "Geyser and AC Wiring Requirements",
+    "content": "Geysers in Indian homes require a dedicated 6 sq mm copper circuit with a 32A MCB and a waterproof 3-pin socket adjacent to the unit. Never use a shared circuit for geyser. Split AC units require a dedicated 2.5 sq mm copper circuit with 16A MCB; 2T and above need 4 sq mm with 20A MCB. Earthing of the metal body is mandatory per IS:3043. Cost for geyser dedicated point including 6 sq mm cable: ₹1,800–3,200. AC dedicated point (1.5T): ₹1,400–2,500. Always use ISI-marked cables from Finolex, Polycab, or RR Kabel for these circuits.",
+    "source": "BIS IS:732, IS:3043", "tags": ["electrical","geyser","AC","wiring","dedicated circuit"]
+  },
+  {
+    "id": "k010", "category": "electrical",
+    "title": "Electrical Safety Inspection Before Renovation",
+    "content": "Before any renovation in India, test existing wiring: use a socket tester (₹400–800) to check live, neutral, and earth connections on all sockets. Check for aluminium wiring (banned for new work; common in buildings pre-1990) — replace with copper. Verify MCB tripping function by pressing test button. Check for double earthing on DB. Inspect conduit for physical damage, exposed wires, or junction boxes without covers. If building is more than 20 years old, full rewiring is advisable before renovation — cost of rewiring is offset by avoided fire risk and insurance compliance. Get an ISI-certified licensed electrician to inspect and certify.",
+    "source": "BIS IS:732, NBC 2016 safety guidelines", "tags": ["electrical","inspection","safety","aluminium wiring","testing"]
+  },
+  {
+    "id": "k011", "category": "flooring",
+    "title": "Vitrified Tile Grades in India: GVT and PGVT",
+    "content": "Indian vitrified tiles are classified under IS:15622. GVT (Glazed Vitrified Tile) has a printed design on top layer — good aesthetics, moderate durability. PGVT (Polished Glazed Vitrified Tile) is GVT with additional surface polishing — premium shine, higher slip risk when wet. Double-charged vitrified tiles are pressed with two layers of pigment — highly durable, suitable for high-traffic areas. Full-body tiles have colour throughout — best for areas where edge chipping is a concern. Water absorption for all vitrified tiles: below 0.5%. Brands: Kajaria (highest market share), Somany, Johnson, RAK Ceramics, Asian Granito, Nitco.",
+    "source": "BIS IS:15622", "tags": ["flooring","vitrified","GVT","PGVT","IS:15622","Kajaria","Somany"]
+  },
+  {
+    "id": "k012", "category": "flooring",
+    "title": "Kajaria and Somany Product Lines in India",
+    "content": "Kajaria Ceramics is India's largest tile brand. Key product lines: Kajaria Eternity (premium large format, ₹120–280/sqft), Kajaria Endura (mid-range 600x600mm, ₹65–110/sqft), Kajaria Vitro (economy, ₹40–65/sqft). Somany Ceramics: Somany Durastone (high durability, ₹80–150/sqft), Somany Lot (economy, ₹35–55/sqft). Nitco Tiles: strong in Maharashtra, known for imported tile ranges. Asian Granito: cost-competitive, good mid-range options ₹55–95/sqft. For bathrooms, specify anti-skid tiles (R10 or R11 rating) — ask dealer for the slip resistance classification. All tiles must carry ISI mark as per IS:15622.",
+    "source": "Kajaria/Somany dealer price lists Q1 2026", "tags": ["flooring","Kajaria","Somany","Nitco","cost","tiles","anti-skid"]
+  },
+  {
+    "id": "k013", "category": "flooring",
+    "title": "Granite Varieties and Costs in India",
+    "content": "Indian granite varieties commonly used in renovation: Black Galaxy (Andhra Pradesh, ₹180–260/sqft polished), Absolute Black (Telangana/Tamil Nadu, ₹160–230/sqft), Kashmir White (Rajasthan, ₹140–200/sqft), Indian Juparana (multicolour, ₹120–180/sqft), Steel Grey (Karnataka, ₹130–190/sqft). Granite slabs for kitchen countertop: 20mm polished slab including fabrication and installation ₹180–300/sqft depending on variety. Granite is heat-resistant and ideal for Indian kitchens. Avoid marble near kitchen sink — too porous. Granite cleaning: pH neutral cleaner only; acid-based cleaners etch polished surface permanently.",
+    "source": "Stone dealers survey, Q1 2026 market rates", "tags": ["flooring","granite","Black Galaxy","Kashmir White","countertop","kitchen"]
+  },
+  {
+    "id": "k014", "category": "flooring",
+    "title": "Marble Types Used in Indian Homes",
+    "content": "Popular marble types in Indian renovation: Makrana White (Rajasthan, premium — used in Taj Mahal, ₹350–700/sqft laid), Italian Calacatta and Carrara (imported, ₹600–1,500/sqft), Katni Marble (Madhya Pradesh, beige/brown, economical ₹80–150/sqft), Rainforest Brown/Green (from India, dramatic veining, ₹200–400/sqft). Marble Mohs hardness 3–4 — softer than vitrified; scratches with sand and grit. Mandatory sealing with Lithofin MN Stain-Stop every 2 years. Never use acidic cleaners (vinegar, lemon) — permanently etches polish. Best for: master bedroom, formal living room. Avoid in kitchens and bathrooms (high moisture/acid exposure).",
+    "source": "Indian stone industry data, Q1 2026", "tags": ["flooring","marble","Makrana","Italian","Katni","sealing"]
+  },
+  {
+    "id": "k015", "category": "flooring",
+    "title": "Tile Adhesive Types: AM40 vs AM50 in India",
+    "content": "Tile adhesive selection is critical for durability. AM40 (normal-set tile adhesive, IS:15477) is standard for floor tiles up to 600x600mm on dry substrates. AM50 (rapid-set, high-strength) is required for large-format tiles (800x800mm and above), wall tiles above 600mm height, and wet areas (bathrooms, kitchens). For large format tiles over 1200mm, use medium-bed adhesive (6–10mm application) and mandatory back-buttering. Brands: Laticrete (Indian factory), Kerakoll Granirapid, Sika TileFix, Ardex. Correct adhesive prevents hollow tiles, debonding, and cracking. Never use OPC cement paste directly — causes efflorescence and bond failure within 2 years.",
+    "source": "BIS IS:15477, manufacturer data sheets", "tags": ["flooring","adhesive","AM40","AM50","Laticrete","Kerakoll","large format"]
+  },
+  {
+    "id": "k016", "category": "flooring",
+    "title": "Flooring Installation Cost in India 2026",
+    "content": "Flooring installation costs per sqft (Q1 2026, labour only): Vitrified tile laying ₹28–50/sqft; natural stone (marble/granite) ₹40–70/sqft; wood/laminate flooring ₹25–45/sqft. Material costs: economy vitrified (600x600mm) ₹40–65/sqft; mid-range (800x800mm) ₹80–130/sqft; large format (800x1600mm) ₹150–300/sqft. Add 10–12% wastage allowance for all tile work. Adhesive + grout: ₹8–15/sqft. City premiums: Mumbai/Delhi NCR +25–35%, Bangalore +15–20%, Hyderabad baseline. Epoxy grout (stain-proof, Mapei Kerapoxy): ₹180–280/sqft of grout area — strongly recommended for bathrooms and kitchens.",
+    "source": "ARKEN contractor survey Q1 2026", "tags": ["flooring","cost","installation","INR","2026","grout"]
+  },
+  {
+    "id": "k017", "category": "flooring",
+    "title": "Waterproofing Under Tile for Indian Bathrooms",
+    "content": "Waterproofing under tiles in Indian bathrooms is mandatory and commonly skipped — leading to the most expensive renovation failures. Required minimum: two coats of polymer-modified cementitious waterproofing membrane (Dr. Fixit Bathseal 2-component or Fosroc Brushbond Rapid). Apply on floor and wall up to 300mm above finished floor level. Cure 24 hours minimum. Conduct 24-hour ponding test before tiling. Never skip this step — re-waterproofing after tile failure costs ₹15,000–45,000 vs ₹3,500–6,000 if done correctly. Bathroom waterproofing material cost: ₹35–65/sqft (floor + wet wall). Total bathroom waterproofing budget for 50 sqft bathroom: ₹8,000–18,000.",
+    "source": "Dr. Fixit application guidelines, BIS NBC 2016", "tags": ["flooring","waterproofing","bathroom","Dr Fixit","Fosroc","ponding test"]
+  },
+  {
+    "id": "k018", "category": "flooring",
+    "title": "Engineered Wood and Laminate Flooring in India",
+    "content": "Engineered wood flooring is suitable for Indian climate in air-conditioned rooms (max 60% RH). Laminate flooring (AC3 rating, 8mm): ₹60–95/sqft installed, sufficient for bedrooms with normal use. Engineered hardwood (15mm): ₹180–350/sqft installed. Top brands: Pergo, Quick-Step, Egger, Greenlam, Merino. NOT suitable for ground floor without DPC, bathrooms, or kitchens. Acclimatise flooring 48–72 hours before installation. Moisture barrier underlay mandatory: ₹8–15/sqft. In coastal cities (Mumbai, Chennai, Kochi), use engineered wood over solid hardwood — better humidity resistance. Solid teak flooring: ₹400–900/sqft but not recommended in humid Indian climates without dehumidification.",
+    "source": "IS:3629, manufacturer data", "tags": ["flooring","engineered wood","laminate","Pergo","Greenlam","humidity"]
+  },
+  {
+    "id": "k019", "category": "painting",
+    "title": "Asian Paints Product Lineup for Indian Walls",
+    "content": "Asian Paints is India's largest paint brand (54% market share). Key product lines by tier: Premium — Royale Luxury Emulsion (₹700–950/4L), Royale Aspira (₹580–820/4L), Royale Sheen (semi-gloss). Mid-range — Tractor Emulsion (₹280–420/4L), Apcolite Premium (₹320–480/4L). Economy — Tractor Shyne (₹200–320/4L). For kitchens and bathrooms: Royale Health Shield (antibacterial, washable, ₹650–900/4L). Exterior: Apex Ultima (₹900–1,400/4L) and Ace Exterior (₹400–600/4L). Texture/feature walls: Royale Play series (Metallics, Silk Illusions, Litho). All paints sold in India since 2016 must be lead-free per Environment Protection Act.",
+    "source": "Asian Paints price list Q1 2026", "tags": ["painting","Asian Paints","Royale","Tractor","Apex","INR","brands"]
+  },
+  {
+    "id": "k020", "category": "painting",
+    "title": "Berger Paints Product Lineup India",
+    "content": "Berger Paints is India's second-largest paint brand. Premium line: Berger Silk Luxury Emulsion (₹620–890/4L) — flagship product, superior smoothness. Berger Silk Breatheasy (low VOC, antibacterial, ₹680–950/4L) — ideal for children's rooms and bedrooms. Mid-range: Berger WeatherCoat (exterior, ₹450–680/4L), Berger Easy Clean (washable interior, ₹380–550/4L). Texture: Berger Illusions (mica effect), Berger Stucco (Venetian plaster look). Primer: Berger Weathercoat Alkali Resist Primer — mandatory on fresh Indian plaster to neutralise alkalinity before emulsion application. Economy: Bison Acrylic Distemper (₹120–200/kg) for ceilings only.",
+    "source": "Berger Paints price list Q1 2026", "tags": ["painting","Berger","Silk","WeatherCoat","primer","VOC","India"]
+  },
+  {
+    "id": "k021", "category": "painting",
+    "title": "Number of Paint Coats on Indian Plaster Walls",
+    "content": "Correct painting sequence on Indian lime/cement plaster walls: (1) Alkali resist primer — 1 coat, allow 6 hours drying; (2) Wall putty — 2 coats, sand with 180-grit between coats, allow 12 hours each; (3) Premium primer — 1 coat; (4) Emulsion — minimum 2 coats, 4 hours drying between coats. Total: 5–6 application coats for a premium finish. Skipping putty is the #1 cause of rough-texture walls in Indian renovations. Economy painters skip putty and apply only 1 coat emulsion — leads to uneven finish and peeling within 2–3 years. Professional spray application gives 15% better finish than roller for the same material spend.",
+    "source": "Asian Paints technical guidelines, BIS IS:5411", "tags": ["painting","coats","putty","primer","plaster","sequence","India"]
+  },
+  {
+    "id": "k022", "category": "painting",
+    "title": "Wall Putty Application on Indian Walls",
+    "content": "Wall putty is essential for smooth finish on Indian cement plaster — plaster inherently has porosity and minor undulations. Two types: White cement-based putty (JK White Putty, Birla White — ₹16–22/kg); Polymer-modified putty (Asian Paints Trucare, Berger Robbialac — ₹22–35/kg). Application rate: 1 kg covers approximately 20–25 sqft (2 coats). Must be applied on well-cured plaster (minimum 28-day cure). Dry-sand each coat before next application. Never apply on damp walls — causes efflorescence. Common mistake: applying putty over existing oil-based paint without proper sanding — causes delamination. Putty cost for standard 12x12ft room: ₹1,800–3,200 material only.",
+    "source": "BIS IS:2395, manufacturer guidelines", "tags": ["painting","putty","JK White","Birla White","plaster","finish"]
+  },
+  {
+    "id": "k023", "category": "painting",
+    "title": "Weathershield Paint for Indian Climate",
+    "content": "Indian climate demands exterior paints with high water resistance and UV stability. Top weathershield products: Asian Paints Apex Ultima Weatherproof (₹950–1,400/4L) — 15-year warranty; Dulux Weathershield Maximum (₹900–1,350/4L); Berger WeatherCoat All Guard (₹650–950/4L). Elastomeric coatings (Berger Crack Seal or Dulux Flexikote) bridge hairline cracks and prevent seepage — best for coastal buildings (Mumbai, Chennai, Kochi). Exterior painting application: 1 coat exterior primer + 2 coats weathershield minimum. In high-humidity monsoon zones, add antifungal additive to paint. Exterior painting should ideally be done October–February (dry season) for best adhesion.",
+    "source": "Asian Paints, Dulux technical data sheets", "tags": ["painting","exterior","weathershield","Apex","Dulux","monsoon","India"]
+  },
+  {
+    "id": "k024", "category": "painting",
+    "title": "Paint Coverage and Consumption for Indian Rooms",
+    "content": "Paint consumption calculation for Indian rooms: 1 litre of emulsion covers approximately 120–140 sqft (2 coats on prepared walls). Standard 12x12ft room with 10ft ceiling: wall area approximately 480 sqft (minus doors/windows = ~400 sqft net). Required emulsion: approximately 6–8 litres (2 coats). Add ceiling (144 sqft): total approximately 10–12 litres for complete room. Wastage: 10% for roller application, 15% for brush. Wall putty: 1 kg per 22 sqft = 18 kg for same room. Primer: 1 litre per 120 sqft = 4 litres. Complete material cost for standard room: Economy ₹3,500–5,500; Mid ₹6,500–10,000; Premium ₹12,000–20,000.",
+    "source": "ARKEN calculator based on manufacturer data", "tags": ["painting","consumption","litres","coverage","sqft","cost estimate"]
+  },
+  {
+    "id": "k025", "category": "painting",
+    "title": "Lead-Free Paint Regulations in India",
+    "content": "The Regulation for Lead Paint in India under the Environment Protection Act mandates that all architectural paints must have lead content below 90 ppm (parts per million) since 2016. The Paintwise Campaign (TERI and WHO) certifies compliant brands. All major brands — Asian Paints, Berger, Dulux, Nerolac — comply. Avoid cheap unbranded paints from local shops, especially for children's rooms — these often contain leaded pigments. Always ask for lead-free certification when purchasing. Low-VOC paints (recommended for bedrooms and children's rooms): Berger Breatheasy (<50 g/L VOC), Asian Paints Royale Health Shield. Instruct painter to ensure adequate ventilation during and after application — VOC exposure risk for 24–48 hours.",
+    "source": "Environment Protection Act India, Paintwise Campaign", "tags": ["painting","lead-free","VOC","safety","children","regulation","India"]
+  },
+  {
+    "id": "k026", "category": "painting",
+    "title": "Interior Painting Costs in India 2026",
+    "content": "Interior painting cost benchmarks India Q1 2026: Wall putty (2 coats): ₹16–24/sqft; Primer coat: ₹5–9/sqft; Economy emulsion 2 coats (Tractor): ₹20–32/sqft total; Mid-range emulsion (Royale/Silk) 2 coats: ₹40–60/sqft; Premium texture paint: ₹70–160/sqft; Metallic/specialty finishes: ₹130–260/sqft. Labour only (application): ₹8–16/sqft for standard emulsion. A 2BHK (800 sqft) complete interior: Economy ₹45,000–65,000; Mid ₹75,000–1.1L; Premium ₹1.3L–2.2L. City premium: Mumbai +30–40%, Delhi NCR +25–35%, Bangalore +15–20%, Hyderabad base. Always insist on putty application — painters try to skip this step to reduce timeline.",
+    "source": "ARKEN contractor survey Q1 2026", "tags": ["painting","cost","INR","2026","2BHK","putty","emulsion"]
+  },
+  {
+    "id": "k027", "category": "painting",
+    "title": "Dulux and Nerolac Paint Products in India",
+    "content": "Dulux (AkzoNobel India) products: Dulux Velvet Touch (premium washable, ₹680–950/4L), Dulux Ambiance Extreme (zero VOC, imported, ₹2,500–3,200/4L), Dulux Weathershield for exteriors. Dulux features a Color Visualizer app useful for Indian clients. Nerolac Paints: Nerolac Impression Ultra HD (₹620–880/4L) — high-sheen premium; Nerolac Excel Total (exterior, ₹550–800/4L); Nerolac Eco Clean (low VOC, antibacterial, ₹580–820/4L). All major brands now have an online colour picker app (Asian Paints ColorNext, Berger paints4you, Dulux ColourFuze) allowing users to preview Indian room colours before purchase. These apps improve conversion and reduce buyer regret.",
+    "source": "Dulux and Nerolac price lists Q1 2026", "tags": ["painting","Dulux","Nerolac","Velvet Touch","Impression","India","premium"]
+  },
+  {
+    "id": "k028", "category": "plumbing",
+    "title": "CPVC vs UPVC vs GI Pipes in Indian Homes",
+    "content": "Three main pipe types used in Indian residential plumbing: (1) CPVC (Chlorinated PVC, IS:15778) — handles hot and cold water up to 93°C; best for concealed plumbing inside Indian apartments. (2) UPVC (Unplasticised PVC, IS:4985) — cold water only (max 45°C); suitable for drainage, water supply to building. (3) GI (Galvanised Iron, IS:1239) — traditional, heavy, prone to corrosion after 15–20 years; avoid for new work. Recommended: CPVC for all interior hot+cold supply, UPVC for drainage. Brands: Astral Pipes (ISI, CPVC), Prince Pipes (ISI, CPVC/UPVC), Finolex (CPVC). CPVC joint strength superior to GI — no threading required, solvent welded.",
+    "source": "BIS IS:15778, IS:4985, IS:1239", "tags": ["plumbing","CPVC","UPVC","GI pipes","Astral","Prince","Finolex","IS:4985"]
+  },
+  {
+    "id": "k029", "category": "plumbing",
+    "title": "ISI Mark Requirements for Plumbing Products",
+    "content": "ISI certification for plumbing products in India: CPVC pipes and fittings must carry IS:15778 mark; UPVC pipes must carry IS:4985 mark; Sanitary fittings (WC, washbasins) must comply with IS:2556 or IS:7231; Taps and fittings should be IS:1795 compliant. Astral Pipes and Prince Pipes are both BIS-licensed and carry ISI marks — verify license number on pipe body. Unbranded pipes (sold by weight in local hardware shops) often fail pressure tests and leach chemicals. For overhead tank UPVC pipes: minimum pressure rating 4 kg/cm² (PN4) required for Indian overhead tank pressures. Always specify ISI-marked pipes in contracts — prevents substitution.",
+    "source": "BIS IS:15778, IS:4985, IS:2556", "tags": ["plumbing","ISI mark","BIS","CPVC","Astral","Prince","IS:7231"]
+  },
+  {
+    "id": "k030", "category": "plumbing",
+    "title": "Common Plumbing Issues in Indian Apartments",
+    "content": "Most common plumbing problems in Indian apartments: (1) Water hammer — banging noise when taps are closed; caused by high pressure (>3 bar) without pressure reducing valve; fix: install PRV (₹800–2,500). (2) Low pressure on upper floors — install booster pump (₹8,000–25,000 for 3/4 HP). (3) Seepage from concealed CPVC joints — caused by improper solvent welding; requires hacking and re-joining. (4) WC flapper failure — leaking cistern; replace flapper seal (₹200–500 DIY). (5) Overhead tank contamination — algae growth in plastic tanks; clean every 6 months, use food-grade HDPE tanks only. All plumbing work in concealed areas must be pressure tested at 1.5x working pressure before wall closure.",
+    "source": "NBC 2016 Part 9, BIS plumbing guidelines", "tags": ["plumbing","water hammer","pressure","seepage","maintenance","India"]
+  },
+  {
+    "id": "k031", "category": "plumbing",
+    "title": "STP and Sewage Requirements in Indian Buildings",
+    "content": "Sewage Treatment Plants (STPs) are mandatory in new residential buildings exceeding 20,000 sqm built-up area under CPHEEO guidelines and many state RERA regulations. For apartment renovation, STP-treated water output can be used for flushing and garden irrigation — reducing municipal water dependency by 30–40%. Check if your building has a functioning STP before planning high water-use renovations. Plumbing renovation must ensure proper venting of drainage stacks (IS:5329) to prevent siphoning of water traps. Minimum P-trap or S-trap depth: 50mm water seal for all fixtures. Replace old bottle traps (common in older Indian apartments) with deep-seal P-traps.",
+    "source": "CPHEEO guidelines, BIS IS:5329, NBC Part 9", "tags": ["plumbing","STP","sewage","drainage","venting","IS:5329","India"]
+  },
+  {
+    "id": "k032", "category": "plumbing",
+    "title": "Plumbing Renovation Costs in India 2026",
+    "content": "Plumbing renovation costs India Q1 2026: Replace concealed CPVC pipe per running foot (including labour): ₹45–85. Full bathroom plumbing reroute (CPVC, 3 fixtures): ₹12,000–25,000. Kitchen plumbing (sink + dishwasher + purifier point): ₹8,000–16,000. Bathroom fittings (WC, basin, shower — mid range Jaquar/Hindware): ₹15,000–35,000. Premium bathroom fittings (Kohler, Grohe): ₹40,000–1.5L. Overhead tank cleaning: ₹800–1,500. Pressure-reducing valve installation: ₹2,000–4,000. Booster pump (3/4 HP): ₹12,000–28,000 supply and install. Waterproofing (wet areas): ₹35–65/sqft. City multiplier: Mumbai 1.3x, Delhi NCR 1.25x vs Hyderabad base.",
+    "source": "ARKEN contractor survey Q1 2026", "tags": ["plumbing","cost","CPVC","bathroom fittings","INR","2026","Jaquar"]
+  },
+  {
+    "id": "k033", "category": "plumbing",
+    "title": "Water Purifier and Hot Water System Plumbing",
+    "content": "Water purifier installation requires a dedicated 1/4 inch feed pipe from nearest supply point and a drain pipe to sink drain. RO systems (Kent, AO Smith, Pureit) require 50–200 ml/min flow rate. UV systems need minimum 1.5L/min. For under-sink RO (most common Indian apartments): plumber cost for connection ₹500–1,200 one-time. Electric geyser (25L, Racold/Havells): requires 1.5 inch BSP inlet/outlet copper/CPVC pipes; max pressure rating 8 bar. Solar water heater (200L Racold/V-Guard): requires 1 inch supply pipe and adequate roof access; install cost ₹3,500–6,000 beyond heater cost. For gas geysers (Bajaj, Racold): install per LPG guidelines, mandatory ventilation to outside.",
+    "source": "IS:12778, manufacturer guidelines", "tags": ["plumbing","water purifier","geyser","RO","Kent","Havells","Racold"]
+  },
+  {
+    "id": "k034", "category": "civil_structure",
+    "title": "Concrete Grades M20 and M25 for Indian Homes",
+    "content": "IS:456 (Plain and Reinforced Concrete — Code of Practice) governs RCC work in India. M20 concrete (20 N/mm² characteristic strength) is minimum grade for residential RCC construction — used for columns, beams, slabs, foundations. M25 (25 N/mm²) is used for high-rise buildings (above G+4) and elements with higher loads. During renovation, if creating new RCC work (lintel, column stump, slab opening frame), use M20 as minimum. Ready-mix concrete (RMC) available in Indian cities at ₹5,500–7,500/m³ for M20, ₹6,500–8,500/m³ for M25. For small works, site-mixed 1:1.5:3 proportion (cement:sand:aggregate) gives approximately M20 strength if water-cement ratio maintained at 0.45–0.5.",
+    "source": "BIS IS:456", "tags": ["civil","M20","M25","concrete","IS:456","RCC","renovation"]
+  },
+  {
+    "id": "k035", "category": "civil_structure",
+    "title": "Waterproofing Methods for Indian Climate",
+    "content": "Indian climate (tropical monsoon) demands robust waterproofing. Three zones requiring waterproofing in renovation: (1) Bathrooms and wet areas: 2-component cementitious membrane (Dr. Fixit Bathseal, Pidilite Dr. Fixit LW+, Fosroc Brushbond). (2) Terraces/roofs: APP/SBS modified bituminous membrane (4mm thick) or liquid applied polyurethane membrane. (3) External walls: elastomeric coating (Berger Crack Seal, Dulux Flexikote). Dr. Fixit (Pidilite brand) dominates the Indian market with over 60% share. Always specify from reputable brands — generic waterproofing compounds fail within 2–3 monsoons. Key rule: waterproofing must cure minimum 7 days before tiling; flood-test 24 hours minimum.",
+    "source": "Pidilite technical data, BIS IS:2645", "tags": ["civil","waterproofing","Dr Fixit","Pidilite","monsoon","Fosroc","terrace"]
+  },
+  {
+    "id": "k036", "category": "civil_structure",
+    "title": "Lintel and Beam Sizes for Indian Seismic Zones",
+    "content": "India is divided into seismic zones II–V (IS:1893). Zones IV and V (Delhi, Himalayan belt, Northeast, parts of Gujarat/Maharashtra) require special detailing. For renovation openings: lintel minimum 150mm depth for spans up to 1.2m; 225mm for spans 1.2–2.0m; structural engineer mandatory for spans above 2.0m. Minimum column size in Indian residential construction: 230mm x 230mm (9x9 inch) for G+2 or below. Reinforcement cover: 40mm for foundation, 25mm for beams/columns in sheltered conditions (IS:456). During renovation, never break into columns or beams without structural assessment. Even removing a single stirrup from a beam can reduce its shear capacity by 15–25%.",
+    "source": "BIS IS:456, IS:1893", "tags": ["civil","lintel","seismic zone","IS:1893","IS:456","column","beam"]
+  },
+  {
+    "id": "k037", "category": "civil_structure",
+    "title": "Expansion Joints in Indian Buildings",
+    "content": "Expansion joints in Indian buildings (IS:3414) accommodate thermal expansion, settlement, and seismic movement. In renovation, never tile or fill over existing expansion joints — this is a critical and frequently made mistake. Building expansion joints must be continued through all floor finishes using flexible sealant (Sikaflex, Fosroc Nitoseal) over a foam backer rod. Joint width maintained per original design (typically 12–25mm). Buildings without expansion joints that are over 45m long in hot climates will develop cracking — this is a design issue, not a material failure. Cost for expansion joint sealing (per running metre): ₹350–800.",
+    "source": "BIS IS:3414, IS:456", "tags": ["civil","expansion joint","IS:3414","Sikaflex","Fosroc","sealing"]
+  },
+  {
+    "id": "k038", "category": "civil_structure",
+    "title": "Wall Crack Assessment in Indian Homes",
+    "content": "Cracks in Indian homes require assessment before renovation to distinguish structural from cosmetic. Hairline cracks (<0.2mm, horizontal on plaster): normal drying shrinkage — fill with crack filler and paint. Vertical cracks following mortar joints: thermal movement — fill with flexible sealant. Diagonal cracks (45° angle at corners of openings): foundation settlement or structural distress — structural engineer mandatory. Wide cracks >5mm or actively growing cracks: do NOT renovate cosmetically; structural assessment required first. Staircase cracks following step pattern: common in Indian masonry — usually non-structural but monitor. Crack filler products: Asian Paints Wall Fill, Berger Crakfil (₹380–450/litre). Structural epoxy injection: Sika Injection-451 or Fosroc Nitofill (₹500–1,200/running metre).",
+    "source": "BIS IS:1905, NBC 2016 structural guidelines", "tags": ["civil","cracks","assessment","foundation","Sika","Fosroc","structural"]
+  },
+  {
+    "id": "k039", "category": "civil_structure",
+    "title": "Anti-Termite Treatment in Indian Buildings",
+    "content": "Termite infestation is a significant risk in Indian buildings, particularly in tropical and coastal regions. IS:6313 governs anti-termite treatment. Pre-construction treatment (soil treatment) is mandatory for new buildings. For renovation, post-construction treatment is applied: drilling holes at 300mm intervals along walls at floor level, injecting chlorpyrifos or imidacloprid solution, then sealing holes. Cost per sq ft of treated floor area: ₹8–15 for chemical barrier treatment. Organic alternatives: Borate treatment (TimBor, BoraCare) for wood. Preventive measures during renovation: treat all new wood with anti-termite primer (Fevicryl, Nippon Wood Preserver) before installation. Termite treatment warranty: professional firms offer 5–10 year guarantees.",
+    "source": "BIS IS:6313, Central Insecticide Board guidelines", "tags": ["civil","termite","anti-termite","IS:6313","treatment","India","wood"]
+  },
+  {
+    "id": "k040", "category": "false_ceiling",
+    "title": "Gyproc vs Armstrong False Ceilings in India",
+    "content": "Two primary false ceiling systems in India: (1) Saint-Gobain Gyproc (gypsum drywall): 12.5mm boards on metal framing, plastered and painted finish. Gives monolithic look, best for high-end residential. (2) Armstrong (grid system): suspended T-bar grid with tiles (mineral fiber, gypsum, PVC). Easier to install and allows access panels. For Indian residential: Gyproc drywall for living rooms and bedrooms (premium look); Armstrong grid with gypsum tiles for commercial-style spaces. Gyproc India is the dominant drywall brand with 60%+ market share. Cost: Gyproc drywall false ceiling ₹75–130/sqft (incl. framing and skim coat); Armstrong grid ceiling ₹65–110/sqft. Both provide 30–60 minutes fire rating.",
+    "source": "Saint-Gobain India, Armstrong India specifications", "tags": ["false ceiling","Gyproc","Armstrong","gypsum","drywall","grid ceiling"]
+  },
+  {
+    "id": "k041", "category": "false_ceiling",
+    "title": "False Ceiling Fire Rating Requirements India",
+    "content": "NBC 2016 Part 4 mandates fire resistance ratings for building elements. False ceilings in Indian residential buildings should provide minimum 30-minute fire rating (F30). Gyproc Standard (12.5mm): 30-minute rating. Gyproc FireLine (15mm): 60-minute rating (mandatory near electrical panels and escape routes in buildings above G+4). POP false ceilings have no standardised fire rating — not suitable where fire resistance is required. In high-rise residential buildings (above 15m), fire-rated gypsum board false ceilings are mandatory for corridors. Thermal insulation above false ceiling (glasswool or rockwool): improves AC energy efficiency and reduces sound transmission. Always route electrical conduit above false ceiling in accessible trays for future maintenance.",
+    "source": "NBC 2016 Part 4, IS:2095", "tags": ["false ceiling","fire rating","NBC 2016","Gyproc FireLine","safety","India"]
+  },
+  {
+    "id": "k042", "category": "false_ceiling",
+    "title": "False Ceiling Installation Costs India 2026",
+    "content": "False ceiling cost benchmarks India Q1 2026: POP (Plaster of Paris) false ceiling: ₹60–100/sqft; Gypsum board drywall (Gyproc): ₹80–135/sqft; Armstrong grid with gypsum tiles: ₹70–115/sqft; Wooden/veneer false ceiling: ₹220–480/sqft. LED cove lighting integration: add ₹90–160 per running metre of cove. Concealed LED strip (12V, warm white): ₹180–350/metre supply and fit. False ceiling requires minimum 9ft room height (2.75m after false ceiling installation, per NBC). Structural load: gypsum board ceiling adds only 8–12 kg/sqft — safe on any RCC slab. Common mistake: making false ceiling too low in small rooms — minimum 8.5ft finished ceiling height recommended for Indian standard rooms.",
+    "source": "ARKEN contractor survey Q1 2026", "tags": ["false ceiling","cost","POP","gypsum","Armstrong","LED cove","INR","2026"]
+  },
+  {
+    "id": "k043", "category": "false_ceiling",
+    "title": "LED Cove Lighting Installation in Indian Homes",
+    "content": "LED cove lighting is the highest ROI single lighting element in Indian renovations — adds hotel finish at modest cost. Standard cove profile: 50–80mm deep shadow line behind which LED strip is recessed. LED strip specification: minimum 14.4W/metre (120 LEDs/metre), 2700K warm white, CRI 80+. Driver (power supply): must be inside accessible junction box, not concealed. Total wattage for 15ft perimeter cove: 14.4W/m × 5m = 72W — connect via 6A MCB. Brands: Havells LED strips (ISI), Phillips, Syska, Wipro. Avoid unbranded strips — higher lumen depreciation and overheating. Estimated cost of 15ft perimeter cove including LED strip, driver, and electrician: ₹4,500–9,000 complete.",
+    "source": "IS:16102, electrical guidelines NBC Part 8", "tags": ["false ceiling","LED cove","cove lighting","Havells","installation","cost"]
+  },
+  {
+    "id": "k044", "category": "false_ceiling",
+    "title": "Weight Limits and Structural Loads for False Ceilings",
+    "content": "False ceiling weight limits for Indian residential slabs (IS:875): Gypsum board ceiling (12.5mm Gyproc + framing): 8–12 kg/sqft — within all slab capacities. POP ceiling on wire mesh: 15–22 kg/sqft — generally safe for RCC slabs. Wooden ceiling with solid panels: 25–40 kg/sqft — verify slab capacity for older buildings. Hanging heavy chandeliers from false ceiling frames: NOT recommended for loads above 5 kg — fix chandelier anchor bolt directly into RCC slab above. Fan bracket must always anchor to RCC slab, never to false ceiling frame (minimum M8 anchor bolt). False ceiling access panels mandatory over: electrical junction boxes, plumbing valves, HVAC maintenance points. Install minimum 1 access panel per room.",
+    "source": "BIS IS:875 Part 2, NBC 2016", "tags": ["false ceiling","weight","structural load","chandelier","fan","access panel"]
+  },
+  {
+    "id": "k045", "category": "modular_kitchen",
+    "title": "HDF vs MDF vs Plywood for Indian Kitchen Cabinets",
+    "content": "Cabinet box material selection is critical in Indian kitchen humidity: (1) BWP Marine Plywood (IS:710 certified, Boiling Water Proof): strongest, best for humid/coastal regions (Mumbai, Chennai, Kochi). Cost: ₹130–190/sqft. (2) HDHMR (High Density High Moisture Resistant Board): termite-resistant, adequate for most Indian kitchens, lighter than ply. Cost: ₹85–130/sqft. (3) MDF (Medium Density Fiberboard): good for door panels and interior carcass in dry climates (Delhi, Hyderabad). NOT suitable for base cabinets near sink — swells when wet. (4) Particle board (economy): NOT recommended for Indian kitchens — poor moisture resistance. For modular kitchens in humid Indian climates, minimum HDHMR carcass with BWP ply for base units near sink.",
+    "source": "BIS IS:710, IS:12406", "tags": ["modular kitchen","HDHMR","MDF","plywood","BWP","IS:710","humidity","India"]
+  },
+  {
+    "id": "k046", "category": "modular_kitchen",
+    "title": "BWR Certification for Kitchen Materials",
+    "content": "BWR (Boiling Water Resistant) certification (IS:1659) is the minimum plywood standard for kitchen applications. BWP (Boiling Water Proof, IS:710) is the premium standard — used for coastal and highly humid locations. Century Ply, Greenply, and Action Tesa are India's largest certified plywood brands. CenturyPly Club Prime (BWP, 18mm): ₹145–175/sqft; Greenply Green Club (BWP, 18mm): ₹155–185/sqft. Always verify ISI stamp and certification number on every sheet. Local unbranded plywood often fails BWR tests — leads to swollen cabinets within 2–3 monsoons. Anti-termite treatment: even BWP plywood should be treated with borate solution before installation in kitchens.",
+    "source": "BIS IS:1659, IS:710, IS:12406", "tags": ["modular kitchen","BWR","BWP","IS:1659","Century Ply","Greenply","termite"]
+  },
+  {
+    "id": "k047", "category": "modular_kitchen",
+    "title": "Hafele, Hettich, and Ebco Hardware in India",
+    "content": "Hardware quality determines kitchen longevity. Premium hardware brands in India: Häfele (Germany, largest premium hardware network in India) — soft-close drawer channels, cabinet hinges, pull-out systems. Hettich (Germany) — Quadro drawer system, Sensys hinge (100,000 cycle tested). Blum (Austria) — Tandem drawer runners (most premium, 500N load rating), Clip-top hinges. Mid-range: Ebco (Indian brand, good quality, 5-year warranty), King Slide (Taiwan). Economy: Dorset, Spacewood hardware. Rule: never compromise on drawer channels and hinges — these are the highest-use components. Specify Häfele or Hettich soft-close in contracts. Budget premium hardware cost: adds ₹8,000–18,000 to a standard 10x8ft kitchen vs economy hardware.",
+    "source": "Hafele India, Hettich India dealer data 2026", "tags": ["modular kitchen","Hafele","Hettich","Blum","hardware","hinges","soft close","India"]
+  },
+  {
+    "id": "k048", "category": "modular_kitchen",
+    "title": "Kitchen Brands in India: Sleek vs Godrej vs IFB",
+    "content": "Modular kitchen brands in India: Premium — Häfele Kitchens (German design, Indian manufacturing, ₹8,000–18,000/sqft fitted); Sleek International (Asian Paints subsidiary, pan-India dealer network, ₹5,000–12,000/sqft); Hacker Kitchens (German imports, ₹15,000–35,000/sqft). Mid-range — Godrej Interio (trusted brand, 400+ showrooms, ₹3,500–7,000/sqft); HomeLane (online-first, 3D design tool, ₹2,800–6,000/sqft); Livspace (tech platform, ₹3,000–8,000/sqft). Economy — local fabricators with HDHMR + laminate (₹1,200–2,500/sqft, no warranty). For investment property, use mid-range brands — warranty and finish directly affect buyer perception. Godrej Interio has strongest brand trust recognition among buyers in ARKEN survey.",
+    "source": "ARKEN buyer preference survey 2024, brand pricing data", "tags": ["modular kitchen","Sleek","Godrej","Hafele","HomeLane","Livspace","brands","India"]
+  },
+  {
+    "id": "k049", "category": "modular_kitchen",
+    "title": "Anti-Termite Treatment for Kitchen Woodwork",
+    "content": "Termite treatment for modular kitchen woodwork is essential in Indian tropical climate. Methods: (1) Factory-treated panels: some brands (Greenply, CenturyPly) treat ply during manufacturing with borate — verify certificate. (2) On-site chemical treatment: apply 1% imidacloprid or 0.5% chlorpyrifos solution to all cut edges and surfaces before assembly. (3) Soil treatment: if kitchen is on ground floor, perimeter soil treatment before cabinet installation. Products: TimBor (borate, low toxicity), Fevicryl Wood Preserver (ready-to-use), Nippon Termite Seal. Cost: professional treatment for kitchen area (100 sqft): ₹2,500–5,000 one time. Warranty-backed treatment gives 5–10 year coverage. Signs of active termite: mud tubes along walls, sawdust near woodwork, hollow-sounding wood.",
+    "source": "BIS IS:6313, Central Insecticide Board India", "tags": ["modular kitchen","termite","anti-termite","TimBor","Greenply","treatment"]
+  },
+  {
+    "id": "k050", "category": "modular_kitchen",
+    "title": "Modular Kitchen Costs in India 2026",
+    "content": "Modular kitchen cost benchmarks India Q1 2026 (per sqft of cabinet wall coverage): Economy (HDHMR, foil/PVC finish): ₹1,300–2,200/sqft; Mid-range (marine ply, laminate — Merino/Greenlam): ₹2,200–3,800/sqft; Premium (acrylic/PU high-gloss, Häfele hardware): ₹3,800–6,500/sqft; Luxury (glass, lacquer, handleless, imported hardware): ₹6,500–14,000/sqft. Countertop costs: Indian granite ₹160–320/sqft; Quartz (Silestone/Corian) ₹550–1,300/sqft; compact laminate ₹210–420/sqft. Standard L-shaped kitchen (10x8ft, complete with mid-range): ₹2.8L–4.5L including countertop. Hardware (Häfele/Hettich) adds 15–20% to cabinet cost. Chimney: Faber/Elica/Hindware ₹8,000–35,000 depending on model.",
+    "source": "ARKEN contractor survey Q1 2026", "tags": ["modular kitchen","cost","INR","2026","acrylic","laminate","Silestone","India"]
+  },
+  {
+    "id": "k051", "category": "vastu_compliance",
+    "title": "Vastu Shastra Key Principles for Indian Homes",
+    "content": "Vastu Shastra is an ancient Indian science of spatial arrangement that significantly influences home design decisions — approximately 52% of Indian buyers check Vastu compliance before purchase (ARKEN survey 2024). Key directional principles: Main entrance — North, East, or North-East (auspicious); never South-West. Pooja room — North-East corner of house (best placement). Master bedroom — South-West quadrant (stability). Kitchen — South-East (Agni/fire corner). Children's study — West or North. Guest bedroom — North-West. Avoid: bedroom in South-East (associated with health issues); kitchen in North-East (conflicts with water element). Vastu compliance can add 8–15% to resale value in North India and traditional buyers across India.",
+    "source": "Vastu Shastra (traditional Indian architectural science), ARKEN buyer survey 2024", "tags": ["vastu","vastu shastra","India","directions","entrance","bedroom","kitchen","compliance"]
+  },
+  {
+    "id": "k052", "category": "vastu_compliance",
+    "title": "Vastu Renovation Guidelines for Common Requests",
+    "content": "Most common Vastu-based renovation requests from Indian clients: (1) Shift main door to North or East if currently South or West — requires structural assessment (cost: ₹45,000–1.2L). (2) Move pooja/prayer room to North-East — affects partition walls (₹15,000–40,000 for partition work). (3) Relocate kitchen to South-East — may require gas line relocation and plumbing changes (₹35,000–80,000). (4) Remove a South-West toilet — sometimes requested; rarely practical or cost-effective. (5) Correct room proportions — use copper Vastu correction plates (₹500–2,000, interior design solution). For renovation projects: document Vastu improvements made — useful for resale marketing to traditional buyers. Tier-2 cities show 70% Vastu compliance concern vs 45% in metros.",
+    "source": "ARKEN buyer preference survey 2024, Vastu Shastra principles", "tags": ["vastu","renovation","South-West","North-East","pooja room","India","compliance"]
+  },
+  {
+    "id": "k053", "category": "vastu_compliance",
+    "title": "Vastu Color Guidelines for Indian Rooms",
+    "content": "Vastu-recommended colours by room direction in Indian homes: North-East (zone of water, wisdom): Light blues, white, cream — promotes clarity. East (rising sun, health): Greens, light yellow — promotes energy. South-East (fire): Oranges, reds, pinks — suitable for kitchen. South (fame, success): Dark reds, coral — avoid bedroom here per Vastu. South-West (earth, stability): Earthy tones, peach, brown — ideal for master bedroom. West (creativity, entertainment): White, grey, silver — living room or dining. North (prosperity): Green, light green, blue-green — good for home office. North-West (air): White, light grey — guest bedroom or bathroom. Paint brands popular for Vastu colours: Asian Paints ColorNext has a dedicated Vastu colour consultation tool used by 8+ lakh Indian households.",
+    "source": "Vastu Shastra principles, Asian Paints ColorNext survey data", "tags": ["vastu","colours","paint","directions","bedroom","kitchen","India","Asian Paints"]
+  },
+  {
+    "id": "k054", "category": "vastu_compliance",
+    "title": "Vastu Tips for Renovation Planning",
+    "content": "Practical Vastu integration points for ARKEN renovation planning: Staircase — avoid North-East and centre of house; South, West, or South-West preferred. Beams — avoid sleeping directly under exposed beams (design concern, also Vastu). Mirrors — avoid directly facing the bed in master bedroom (Vastu + practical sleep disturbance). Open shelving — North or East wall recommended for prosperity symbols. Water features (if added) — North-East corner. Plants — entrance area and North-East (avoid bedroom per some schools). Toilets — should not share a wall with pooja room; avoid North-East placement. For high-end clients, ARKEN can flag Vastu concerns in the renovation report — this significantly increases perceived advisor value in traditional buyer markets.",
+    "source": "Vastu Shastra, ARKEN renovation advisory practice", "tags": ["vastu","staircase","mirrors","beams","plants","renovation","India","tips"]
+  }
+]
