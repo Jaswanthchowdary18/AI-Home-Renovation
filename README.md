@@ -480,21 +480,6 @@ Full interactive docs available at `/docs` when the backend is running.
 | Plywood | Greenply, Century, Kitply |
 | Hardware & Electrical | Havells, Legrand, Philips, Anchor, Schneider |
 
-### City Coverage
-
-**Tier 1:** Mumbai, Delhi NCR, Bangalore, Hyderabad, Chennai, Pune, Kolkata  
-**Tier 2:** Ahmedabad, Surat, Jaipur, Lucknow, Chandigarh, Nagpur  
-**Tier 3:** Bhopal, Indore, and 50+ additional cities
-
-### Budget Tiers
-
-| Tier | Range |
-|---|---|
-| Basic | ₹3 – 5 Lakh |
-| Mid | ₹5 – 10 Lakh |
-| Premium | ₹10 Lakh+ |
-
----
 
 ## Datasets
 
@@ -511,19 +496,6 @@ Full interactive docs available at `/docs` when the backend is running.
 > Large files and trained model weights are not committed to this repository. See [Quick Start](#quick-start) for instructions on obtaining or retraining them.
 
 ---
-
-## Production Deployment
-
-### AWS Infrastructure (ap-south-1 — Mumbai region)
-
-| Component | Service | Estimated Monthly Cost |
-|---|---|---|
-| Backend API | EC2 g4dn.xlarge (GPU) | ₹28,000 |
-| Database | RDS PostgreSQL t3.medium | ₹6,500 |
-| Cache | ElastiCache Redis t3.micro | ₹2,200 |
-| Image Storage + CDN | S3 + CloudFront | ₹1,500/TB |
-| Frontend | Vercel / Amplify | ₹2,000 |
-| **Total** | | **~₹40,000/month** |
 
 ### Deployment Steps
 ```bash
