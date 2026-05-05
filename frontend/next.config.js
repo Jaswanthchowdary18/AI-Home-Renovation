@@ -11,12 +11,11 @@ const nextConfig = {
   },
   async headers() {
     const isDev = process.env.NODE_ENV !== "production";
-    // framer-motion and three.js/@react-three use new Function() / eval internally.
-    // 'unsafe-eval' is required in dev to silence the CSP violation.
-    // In production builds these are pre-compiled and do not need eval.
+
     const scriptSrc = isDev
       ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
       : "script-src 'self' 'unsafe-inline'";
+
     return [
       {
         source: "/(.*)",
@@ -29,7 +28,10 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: blob: https://*.amazonaws.com",
-              "connect-src 'self' http://localhost:8000 https://arken.in wss://arken.in",
+
+              // ✅ FIXED LINE (IMPORTANT)
+              "connect-src 'self' http://localhost:8000 https://ai-home-renovation-2-yo2v.onrender.com https://arken.in wss://arken.in",
+
               "worker-src blob:",
             ].join("; "),
           },
